@@ -17,7 +17,7 @@ export default function Home() {
     setData(null);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/upload", formData);
+      const res = await axios.post("https://socialscope-58zx.onrender.com/api/upload", formData);
       setData(res.data);
     } catch (err) {
       console.error("UPLOAD ERROR:", err);
